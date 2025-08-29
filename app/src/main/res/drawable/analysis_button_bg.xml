@@ -1,0 +1,44 @@
+<!-- res/drawable/analysis_button_bg.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Fraud result: Red -->
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#FF3B30"/> <!-- Red -->
+            <corners android:radius="12dp"/>
+            <stroke android:width="2dp" android:color="#B00020"/>
+            <padding android:left="12dp" android:top="8dp" android:right="12dp" android:bottom="8dp"/>
+        </shape>
+    </item>
+
+    <!-- Normal result: Green -->
+    <item android:state_checked="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#34C759"/> <!-- Green -->
+            <corners android:radius="12dp"/>
+            <stroke android:width="2dp" android:color="#0B8E23"/>
+            <padding android:left="12dp" android:top="8dp" android:right="12dp" android:bottom="8dp"/>
+        </shape>
+    </item>
+
+    <!-- Call live / Recording: Orange -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#FF9500"/> <!-- Orange -->
+            <corners android:radius="12dp"/>
+            <stroke android:width="2dp" android:color="#C85C00"/>
+            <padding android:left="12dp" android:top="8dp" android:right="12dp" android:bottom="8dp"/>
+        </shape>
+    </item>
+
+    <!-- Default (Idle / Call not active): Gray -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#E0E0E0"/> <!-- Light Gray -->
+            <corners android:radius="12dp"/>
+            <stroke android:width="2dp" android:color="#9E9E9E"/>
+            <padding android:left="12dp" android:top="8dp" android:right="12dp" android:bottom="8dp"/>
+        </shape>
+    </item>
+
+</selector>
